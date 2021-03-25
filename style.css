@@ -1,0 +1,107 @@
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#header {
+  background-color: #189cc4;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: 0 auto;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .navbar__wrap {
+  display: flex;
+}
+
+.navbar__wrap > li {
+  padding: 0 20px;
+}
+
+.navbar__wrap > li > a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.until > .until__wrap {
+  display: flex;
+}
+
+.until > ul > li {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: 0, 0;
+}
+
+.until__wrap > li.sadan {
+  background-image: url("./images/header/firm_01.png");
+}
+
+.until__wrap > li.until-search {
+  width: 20px;
+  background-image: url("./images/header/search_01.png");
+  background-size: 20px;
+  padding: 0 10px;
+}
+
+.until__wrap > li.toggle-btn {
+  width: 20px;
+  background-image: url("./images/header/nav_01.png");
+  background-size: 20px;
+  padding: 0 5px;
+}
+
+.until__wrap li:nth-child(2) {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.until__wrap li:nth-child(2) a::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 30px;
+  height: 10px;
+  background-image: url("./images/header/select_02.png");
+  background-repeat: no-repeat;
+}
+
+.until__wrap > li > a.global {
+  width: 25px;
+  height: 20px;
+  background-image: url("./images/header/global.png");
+  background-repeat: no-repeat;
+}
+
+.kor {
+  color: #dd0330;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+}
+
+.fuck-video {
+  width: 1800px;
+  height: 600px;
+}
