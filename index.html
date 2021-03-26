@@ -25,8 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header start-->
     <header id="header">
       <div class="header__wrap">
         <h1 class="header__logo">
@@ -75,13 +81,36 @@
         </nav>
       </div>
     </header>
-
+    <!-- Header end-->
+    <!-- Section wraper contents start-->
     <div class="contents">
+      <!-- Intro section start-->
       <section id="intro">
-        <div class="input__wrap"></div>
+        <div class="input__wrap">
+          <h1>
+            GLOBAL REACH
+            <br />
+            DEDICATION TO CLIENTS
+            <br />
+            SOCIAL RESPONSIBILITY
+          </h1>
+          <p>
+            사람중심, 진정성, 최고의 실력과 정성으로 문제를 해결하는
+            <br />
+            전문가 공동체의 새로운 지평
+          </p>
+          <form>
+            <input
+              class="input-search"
+              type="search"
+              placeholder="검색어 입력"
+            />
+            <a></a>
+          </form>
+        </div>
         <div class="intro__video">
           <video
-            class="fuck-video"
+            class="intro-video"
             muted
             preload="metadata"
             loop="true"
@@ -91,6 +120,70 @@
           </video>
         </div>
       </section>
+      <!-- Intro section end-->
+      <!-- Case Section start -->
+      <section id="case">
+        <div class="case__wrap">
+          <!-- Slider start-->
+          <div class="slider">
+            <div class="slider__wrap">
+              <div class="slider__txt">
+                <h2>지평소식</h2>
+                <p>ESG 자료실</p>
+                <div>
+                  <a class="slider__idx active">01</a>
+                  <a class="slider__idx">02</a>
+                  <a class="slider__idx">03</a>
+                  <a class="slider__idx">04</a>
+                </div>
+              </div>
+              <div class="slider__img">
+                <img src="./images/case/slider01.jpg" />
+              </div>
+              <div class="slider__btn">
+                <a class="prev">
+                  <i class="fas fa-chevron-left"></i>
+                </a>
+                <a class="next">
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slider end-->
+          <!-- 업무사례-->
+          <div class="workCase">
+            <h1>업무사례</h1>
+            <a></a>
+            <ul class="news">
+              <li class="news__list">
+                <a class="news__item01">
+                  <span>IPD 자본시장</span>
+                  <p>지평, 원스토어 IPD 법률 자문도 맡는다</p>
+                </a>
+              </li>
+              <li class="news__list">
+                <a class="news__item02">
+                  <span>IPO 자본시장</span>
+                  <p>
+                    미래에셋대우(주) 및 프레스티지바이오로직스(주)를 대리하여
+                    코스닥시장 상장 자문
+                  </p>
+                </a>
+              </li>
+              <li class="news__list">
+                <a class="news__item03">
+                  <span>IPO 자본시장</span>
+                  <p>
+                    (주)싸이버원 및 키움증권(주)를 대리하여 코스닥시장 상장 자문
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!- Case Section end -->
     </div>
   </body>
 </html>
