@@ -4,8 +4,6 @@ const viewfortUl = document.querySelector('.slider-viewfort ul');
 const maxWidth = viewfortUl.clientWidth*-1;
 let moveInterval = -1080;
 
-let fuck = -1080;
-
 let i = 1;
 
 function autoMoveSlider(number){
