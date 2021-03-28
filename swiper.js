@@ -2,11 +2,6 @@
 
 const viewfortUl = document.querySelector('.slider-viewfort ul');
 
-const firstMaxWidth = viewfortUl.clientWidth*-1; //ul너비 11,880
-const secondMaxWidth = viewfortUl.clientWidth*-1; //ul너비 7,590
-const thirdMaxWidth = viewfortUl.clientWidth*-1; //ul너비 3,740
-
-
 const firstQuarter = -1080; //슬라이더 width 960px + margin 120px 더한 값의 음수
 const secondQuarter = -690; //width 670px + margin 20px
 const thirdQuarter = -340; //width 335px + margin 5px
@@ -34,6 +29,7 @@ const timer = setInterval(autoMoveSlider, 5000);
 
 
 function secondAutoMoveSlider(number){
+  const secondMaxWidth = viewfortUl.clientWidth*-1; //ul너비 7,590
   let secondWidth3d = number*i;
         console.log(`i = ${i}`);
         console.log(`number = ${number}`);
@@ -47,6 +43,7 @@ function secondAutoMoveSlider(number){
 }
 
 function firstAutoMoveSlider(number){
+  const firstMaxWidth = viewfortUl.clientWidth*-1; //ul너비 11,880
   let firstWidth3d = number*i;
   if(firstWidth3d <= firstMaxWidth){
     i=0;
@@ -56,6 +53,7 @@ function firstAutoMoveSlider(number){
 }
 
 function thirdAutoMoveSlider(number){
+  const thirdMaxWidth = viewfortUl.clientWidth*-1; //ul너비 3,740
   let thirdWidth3d = number*i;
         console.log(`i = ${i}`);
         console.log(`number = ${number}`);
