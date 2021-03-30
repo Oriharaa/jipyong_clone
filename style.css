@@ -1341,8 +1341,17 @@ nav.active .activeDev > li > a {
 }
 
 @media screen and (max-width: 680px) {
+
+  #info{
+    background-attachment: initial;
+  }
   #intro {
+    background-image:url("./images/bg/intro_m.jpg");
     height: 800px;
+  }
+
+  #intro .intro__video{
+    display:none;
   }
 
   .input__wrap h1 {
