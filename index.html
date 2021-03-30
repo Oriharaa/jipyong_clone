@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>법무법인[유] 지평</title>
     <script src="header.js" defer></script>
+    <script src="slider.js" defer></script>
     <script src="swiper.js" defer></script>
     <style type="text/css">
       @import url("reset.css");
@@ -139,6 +140,20 @@
               <li class="lang">
                 <a class="global"></a>
                 <span class="kor">KOR</span>
+                <ul class="twoDev">
+                  <li>
+                    <a>KOR</a>
+                  </li>
+                  <li>
+                    <a>ENG</a>
+                  </li>
+                  <li>
+                    <a>CHN</a>
+                  </li>
+                  <li>
+                    <a>JPN</a>
+                  </li>
+                </ul>
               </li>
               <li class="until-search">
                 <a></a>
@@ -303,15 +318,13 @@
                 <h2>지평소식</h2>
                 <p>ESG 자료실</p>
                 <div>
-                  <a class="slider__idx active">01</a>
-                  <a class="slider__idx">02</a>
-                  <a class="slider__idx">03</a>
-                  <a class="slider__idx">04</a>
+                  <a class="slider__idx active" data-idx="0">01</a>
+                  <a class="slider__idx" data-idx="1">02</a>
+                  <a class="slider__idx" data-idx="2">03</a>
+                  <a class="slider__idx" data-idx="3">04</a>
                 </div>
               </div>
-              <div class="slider__img">
-                <!-- <img src="./images/case/slider01.jpg" /> -->
-              </div>
+              <div class="slider__img"></div>
               <div class="slider__btn">
                 <a class="prev">
                   <i class="fas fa-chevron-left"></i>

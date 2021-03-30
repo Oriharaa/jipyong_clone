@@ -6,7 +6,7 @@ const firstQuarter = -1080; //슬라이더 width 960px + margin 120px 더한 값
 const secondQuarter = -690; //width 670px + margin 20px
 const thirdQuarter = -340; //width 335px + margin 5px
 
-let i = 0;
+let i = 1;
 
 const timer = setInterval(autoMoveSlider, 5000);
 // clearInterval(timer);
@@ -24,20 +24,23 @@ function autoMoveSlider(){
   }
 };
 
-function secondAutoMoveSlider(number){
-  const secondMaxWidth = viewfortUl.clientWidth*-1; //ul너비 7,590
-  let secondWidth3d = number*i;
-  if(secondWidth3d <= secondMaxWidth){
+function firstAutoMoveSlider(number){
+  const firstMaxWidth = viewfortUl.clientWidth*-1; //ul너비 11,880
+  let firstWidth3d = number*i;
+  if(firstWidth3d <= firstMaxWidth){
     i=0;
+  }
+  if(firstWidth3d === number*10){
+    console.log("dd");
   }
   viewfortUl.style.transform = `translate3d(${number*i}px, 0px, 0px)`;
   i++;
 }
 
-function firstAutoMoveSlider(number){
-  const firstMaxWidth = viewfortUl.clientWidth*-1; //ul너비 11,880
-  let firstWidth3d = number*i;
-  if(firstWidth3d <= firstMaxWidth){
+function secondAutoMoveSlider(number){
+  const secondMaxWidth = viewfortUl.clientWidth*-1; //ul너비 7,590
+  let secondWidth3d = number*i;
+  if(secondWidth3d <= secondMaxWidth){
     i=0;
   }
   viewfortUl.style.transform = `translate3d(${number*i}px, 0px, 0px)`;

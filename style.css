@@ -69,7 +69,6 @@ button:focus {
   display:block;
 }
 
-
 .navbar__wrap > li > a {
   font-size: 18px;
   color: #fff;
@@ -118,6 +117,10 @@ button:focus {
   cursor:pointer;
 }
 
+#navbar .until__wrap > li.lang.show .twoDev{
+  display:block;
+}
+
 .until__wrap > li.sadan {
   background-image: url("./images/header/firm_01.png");
 }
@@ -151,7 +154,7 @@ button:focus {
   align-items: center;
 }
 
-.until__wrap li:nth-child(2) a::after {
+.until__wrap > li:nth-child(2) > a::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -394,6 +397,7 @@ nav.active .activeDev > li > a {
   margin-bottom: 80px;
 }
 
+
 .slider__wrap {
   position: relative;
   display: flex;
@@ -401,9 +405,8 @@ nav.active .activeDev > li > a {
 }
 
 .slider__txt {
-  position: relative;
   width: 30%;
-  padding: 40px 0 0 40px;
+  padding: 40px 20px 0 40px;
   background-color: #df1e36;
   color: #fff;
 }
@@ -416,6 +419,7 @@ nav.active .activeDev > li > a {
 
 .slider__txt p {
   font-size: 20px;
+  line-height: 1.4em;
 }
 
 .slider__txt div {
@@ -438,6 +442,7 @@ nav.active .activeDev > li > a {
   background: url("./images/case/slider01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  transition:all 350ms;
 }
 
 .slider__btn {
@@ -446,6 +451,11 @@ nav.active .activeDev > li > a {
   right: 0;
   display: flex;
   background-color: #df1e36;
+}
+
+.slider__btn > a:hover >i{
+  background-color:#fff;
+  color:#df1e36;
 }
 
 .slider__btn > a {

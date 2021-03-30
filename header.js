@@ -5,6 +5,7 @@ const toggleBtn = document.querySelector('#header .toggle-btn');
 const headerLogo = document.querySelector('#header .header__logo a img');
 const sadan = document.querySelector('#header .sadan');
 const lang = document.querySelector('#header .lang');
+const langMenu = document.querySelector('#header .lang .twoDev');
 
 const activeNav = document.querySelector('#header .active');
 const basicNav = document.querySelector('#header .navbar__wrap');
@@ -14,6 +15,11 @@ const searchPopUp = document.querySelector('#searchPop-up');
 const xBtn = document.querySelector('#searchPop-up .btn-close');
 
 
+lang.addEventListener('click', ()=> showLang());
+
+function showLang(){
+  lang.classList.toggle('show');
+}
 
 toggleBtn.addEventListener('click', ()=>{
   showActiveNav();
