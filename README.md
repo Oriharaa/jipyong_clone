@@ -8,7 +8,7 @@
 <br/>
 UI설계, 퍼블리싱능력을 향상시키고자 클론코딩하였습니다.
 
-👁 [URL 바로가기](https://oriharaa.github.io/jipyong_clone/)
+👁 [URL 바로가기](https://cherryc0ck.github.io/jipyong_clone/)
 <br/>
 <br/>
 
